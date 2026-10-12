@@ -1,22 +1,22 @@
 <script src="nn.min.js"></script>
 <script>
   /* global nn */
-  let fg, bg
+  let text, page
 
   function setup () {
     // pick two random colors
-    fg = nn.randomColor()
-    bg = nn.randomColor()
+    text = nn.randomColor()
+    page = nn.randomColor()
     // ensure WCGA AA conlor contrast
-    while (nn.colorContrast(fg, bg) < 2.7) {
-      fg = nn.randomColor()
+    while (nn.colorContrast(text, page) < 2.7) {
+      text = nn.randomColor()
     }
     // update body's content and styles
     nn.get('body')
       .content('Hi World Wide Web!')
       .css({ 
-        color: fg, 
-        background: bg,
+        color: text, 
+        background: page,
         overflow: 'hidden',
         height: '100vh',
         display: 'grid',
@@ -33,7 +33,7 @@
     const x = nn.random(-100, nn.width + 100)
     const y = nn.random(-100, nn.height + 100)
     const r = nn.random(360)
-    const c = nn.toHSL(fg)
+    const c = nn.toHSL(text)
     // create an img element for our butterfly gif
     nn.create('img')
       .set('src', 'https://i1.wp.com/media1.giphy.com/media/bZi83fG4Auk4uDi6Lt/200w.gif?cid=82a1493bam3y7av11w81yljznnweuldb4mecvfry4r7ys1cg&rid=200w.gif&ct=s')
