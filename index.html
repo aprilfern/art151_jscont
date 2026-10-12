@@ -8,7 +8,7 @@
     fg = nn.randomColor()
     bg = nn.randomColor()
     // ensure WCGA AA conlor contrast
-    while (nn.colorContrast(fg, bg) < 4.5) {
+    while (nn.colorContrast(fg, bg) < 2.7) {
       fg = nn.randomColor()
     }
     // update body's content and styles
@@ -25,7 +25,7 @@
         fontSize: 72
       })
     // run the createGif function 50 times
-    nn.times(100, createGif)
+    nn.times(27, createGif)
   }
   
   function createGif () {
@@ -36,7 +36,7 @@
     const c = nn.toHSL(fg)
     // create an img element for our butterfly gif
     nn.create('img')
-      .set('src', 'butterfly.gif')
+      .set('src', 'https://i1.wp.com/media1.giphy.com/media/bZi83fG4Auk4uDi6Lt/200w.gif?cid=82a1493bam3y7av11w81yljznnweuldb4mecvfry4r7ys1cg&rid=200w.gif&ct=s')
       .addTo('body')
       .position(x, y)
       .rotate(r)
