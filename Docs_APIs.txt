@@ -1,0 +1,6 @@
+A) Answer the following questions either as a comment to this submission, making sure you number each one, or in a separate document that is shared.
+  1) What is the difference between a Web API and a JavaScript library?
+    Define each term and provide one example of each from the reading.
+
+  2) How does the reading distinguish between a library and a framework?
+    Provide at least one example of a library and one example of a framework mentioned in the text, and clarify how their roles differ.
