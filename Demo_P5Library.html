@@ -1,16 +1,26 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
-<script>
-  /* global p5 */
-  const sketch = (p) => {
-    p.setup = () => {
-      p.createCanvas(450, 450)
-      p.background(154, 117, 240)
-    }
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Demo P5 Library</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+  </head>
+  <body>
+    <script>
+      /* global p5 */
+      const sketch = (p) => {
+        p.setup = () => {
+          p.createCanvas(450, 450)
+          p.background(154, 117, 240)
+        }
 
-    p.draw = () => {
-      p.fill(20, 242, 224)
-      p.ellipse(p.mouseX, p.mouseY, 50, 50)
-    }
-  }
-  new p5(sketch)
-</script>
+        p.draw = () => {
+          p.fill(20, 242, 224)
+          p.ellipse(p.mouseX, p.mouseY, 50, 50)
+        }
+      }
+      new p5(sketch)
+    </script>
+  </body>
+</html>
+
+
