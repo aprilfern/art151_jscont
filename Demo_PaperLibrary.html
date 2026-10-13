@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Untitled</title>
+    <title>Demo Paper Library</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-full.min.js'></script>
   </head>
   <body>
@@ -9,19 +9,19 @@
       /* global paper */
       let path
       const points = 25
-      const segLength = 30
+      const segLength = 40 // I changed the length
 
       function setup () {
         const canvas = document.createElement('canvas')
-        canvas.width = 600
-        canvas.height = 600
+        canvas.width = 800 // I increased the canvas size
+        canvas.height = 800
         document.body.appendChild(canvas)
 
         paper.setup(canvas)
 
         path = new paper.Path({
-          strokeColor: 'red',
-          strokeWidth: 20,
+          strokeColor: 'purple', // I changed the color
+          strokeWidth: 15, // I changed the stroke width
           strokeCap: 'round'
         })
 
