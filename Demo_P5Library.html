@@ -10,12 +10,12 @@
       const sketch = (p) => {
         p.setup = () => {
           p.createCanvas(450, 450)
-          p.background(154, 117, 240)
+          p.background(216, 169, 235)
         }
 
         p.draw = () => {
-          p.fill(20, 242, 224)
-          p.ellipse(p.mouseX, p.mouseY, 50, 50)
+          p.fill(182, 235, 169)
+          p.rect(p.mouseX, p.mouseY, 50, 50)
         }
       }
       new p5(sketch)
