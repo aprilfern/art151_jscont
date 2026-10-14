@@ -2,5 +2,13 @@ A) Answer the following questions either as a comment to this submission, making
   1) What is the difference between a Web API and a JavaScript library?
     Define each term and provide one example of each from the reading.
 
+    A Web API is a code-based interfaced that gives a programmer/developer access to some data or functionality another programmer/developer wrote, which is often JavaScript objects and functions.
+    - Ex: DOM API
+    A JavaScript library is a collection of objects or functions another individual or group created for solving a set of related tasks.
+    - Ex: Tone.js
+
   2) How does the reading distinguish between a library and a framework?
     Provide at least one example of a library and one example of a framework mentioned in the text, and clarify how their roles differ.
+
+    An example of a library is three.js. An example of a framework is A-Frame. Their roles differ because frameworks are a bit bigger and more specific in their purpose. 
+    A framework is stricter on how your project is framed, while a library lets you organize your code however you want. 
